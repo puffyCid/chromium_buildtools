@@ -23,7 +23,7 @@ config("config") {
       "-std:c++20",
     ]
   } else {
-    cflags += [ "-fPIC" ]
+    cflags += [ "-fPIC", "-I%%LOCALBASE%%/include" ]
     cflags_cc = [ "-std=c++20" ]
   }
 
